@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>J J COMPANY</title>
+<style>
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;s
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #0d6efd;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: white;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+
+        nav {
+            background: #222;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #0d6efd;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1200") center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .hero button {
+            background: #0d6efd;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .hero button:hover {
+            background: #084298;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .services {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 250px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+
+ <header>
+    <img src="https://stdevelopers.in/images/header_logo1.png" alt="J J COMPANY Logo" class="logo">
+
+    <h1>J J COMPANY</h1>
+    <p>Innovative Solutions for Your Business</p>
+</header>
+
+
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
+    <h2>WELCOME TO J J COMPANY </h2>
+    <p>Helping businesses grow with modern technology.</p>
+    <br>
+    <button>Learn More</button>
+</div>
+
+<section id="about">
+    <h2>About Us</h2>
+    <br>
+    <p>
+        J J COMPANY is dedicated to providing innovative solutions,
+        quality services, and exceptional customer support. Our mission
+        is to help businesses succeed through technology and expertise.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <br>
+    <div class="services">
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>Modern and responsive websites for businesses.</p>
+        </div>
+
+        <div class="card">
+            <h3>Mobile Apps</h3>
+            <p>Android and iOS applications with great user experience.</p>
+        </div>
+
+        <div class="card">
+            <h3>Digital Marketing</h3>
+            <p>SEO, social media, and online branding solutions.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <br>
+    <p><strong>Email:</strong> info@jjcompany.com</p>
+    <p><strong>Phone:</strong> +91 3657214890</p>
+    <p><strong>Address:</strong> 123 Business Street, Mumbai</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 J J COMPANY. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>            

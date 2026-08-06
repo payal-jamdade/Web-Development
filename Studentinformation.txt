@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Information Form</title>
+
+<style>
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:450px;
+    background:#fff;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#333;
+}
+
+label{
+    display:block;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:15px;
+}
+
+.gender{
+    margin-top:8px;
+}
+
+.gender input{
+    width:auto;
+    margin-right:5px;
+}
+
+button{
+    width:48%;
+    padding:10px;
+    margin-top:20px;
+    border:none;
+    border-radius:5px;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.submit{
+    background:#28a745;
+}
+
+.submit:hover{
+    background:#218838;
+}
+
+.reset{
+    background:#dc3545;
+    float:right;
+}
+
+.reset:hover{
+    background:#c82333;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Information Form</h2>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Roll Number</label>
+        <input type="text" placeholder="Enter roll number" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter phone number">
+
+        <label>Gender</label>
+        <div class="gender">
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+        </div>
+
+        <label>Course</label>
+        <select>
+            <option>Select Course</option>
+            <option>AIML</option>
+            <option>ENTC</option>
+            <option>CIVIL</option>
+            <option>MECHANICAL</option>
+            <option>CSE</option>
+        </select>
+
+        <label>Date of Birth</label>
+        <input type="date">
+
+        <label>Address</label>
+        <textarea rows="4" placeholder="Enter your address"></textarea>
+
+        <button type="submit" class="submit">Submit</button>
+        <button type="reset" class="reset">Reset</button>
+    </form>
+</div>
+
+</body>
+</html>    
