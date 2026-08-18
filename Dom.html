@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Manipulation</title>
+
+    <style>
+        .box{
+            padding: 20px;
+            border: 2px solid black;
+            width: 300px;
+        }
+        .highlight{
+            background-color: yellow;
+            color: blue;
+        }
+        
+    </style>
+      </head>
+<body>
+    <div id="box" class="box">
+        <h2 id="title">Welcome Students</h2>
+        <p id="message">This is DOM Manipulation</p>
+        <img id="photo" src="https://i.pinimg.com/1200x/81/0b/35/810b3513e26792d4b4019af326f97d48.jpg" width="150">
+        <br><br>
+        <a id="link" href="https://www.google.com">Google</a>
+        <br><br>
+        <button onclick="changeContent()">Change Content</button>
+        <button onclick="changeStyle()">Change Style</button>
+        <button onclick="changeImage()">Change Image</button>
+        <button onclick="changeLink()">Change Link</button>
+        <button onclick="changeClass()">Change Class</button>
+        </div>
+        <script>
+
+            function changeContent(){
+                document.getElementById("title").innerHTML = "JavaScript DOM Manipulation";
+                document.getElementById("message").textContent = "content changed dynamically using javascript";
+            }
+            function changeStyle(){
+                let message = document.getElementById("message");
+
+                message.style.color = "red";
+                message.style.fontsize ="24px";
+                message.style.fontWeight = "bold";
+
+            }
+
+            function changeImage() {
+                document.getElementById("photo")
+                .setAttribute("src","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBDq4PsgeZ0LIVSg1Z0f1vu4AB-yyQyJYJGqSEtCfBfHH-9SIEFDpV8NYA&s=10");
+
+                document.getElementById("link").innerText = "visit wikipedia";
+            }
+            function changeLink(){
+                document.getElementById("link")
+                .setAttribute("href", "https://www.wikipedia.org");
+                
+                document.getElementById("link").innerText = "visit wikipedia";
+            }
+            function changeClass(){
+                document.getElementById("box")
+                .classList.toggle("highlight");
+            }
+        
+        </script>
+    </body>
+</html>
